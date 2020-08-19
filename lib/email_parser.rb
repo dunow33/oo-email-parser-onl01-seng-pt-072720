@@ -20,6 +20,6 @@ class EmailAddressParser
       @@emails << email
     end
     
-    @@emails.uniq
+    @@emails.uniq!
   end
 end
