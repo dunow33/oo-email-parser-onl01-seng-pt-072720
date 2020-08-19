@@ -14,7 +14,7 @@ class EmailAddressParser
   def parse
     #email_list = @emails.gsub(/, /, " ").split
     
-    email_list = @emails.split(/, | /)
+    email_list = @emails.split(/", "| /)
     
     email_list.each do | email |
       @@emails << email
