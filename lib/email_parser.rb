@@ -20,6 +20,6 @@ class EmailAddressParser
       @@emails << email
     end
     
-    @@emails.uniq
+    array_list = @@emails.uniq
   end
 end
