@@ -14,10 +14,10 @@ class EmailAddressParser
   def parse
     #email_list = @emails.gsub(/, /, " ").split
     
-    email_list = @emails.split(/, | /)
+    email_list = @emails.split(/, | /).uniq
     
-    email_list.each do | email |
-      @@emails << email
-    end
+    # email_list.each do | email |
+    #   @@emails << email
+    # end
   end
 end
