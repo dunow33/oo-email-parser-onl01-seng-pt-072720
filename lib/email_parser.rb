@@ -19,10 +19,5 @@ class EmailAddressParser
     email_list.each do | email |
       @@emails << email
     end
-    
-    puts @@emails
-    @@emails.uniq!
-    
-    puts @@emails
   end
 end
