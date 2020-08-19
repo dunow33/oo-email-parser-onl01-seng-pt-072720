@@ -21,5 +21,7 @@ class EmailAddressParser
     end
     
     array_list = @@emails.uniq
+    
+    return array_list
   end
 end
